@@ -1,5 +1,29 @@
+# Dependencies
 node_modules
+
+# Build output
 dist
+
+# Environment variables
 .env
+.env.local
+.env.*.local
+
+# OS files
 .DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+
+# Logs
 *.log
+npm-debug.log*
+
+# Swap files
+*.swp
+*.swo
+
+# Package manager lock (optional — uncomment if using yarn)
+# yarn.lock

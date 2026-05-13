@@ -10,6 +10,7 @@ import {
     threejs,
     typescript,
     docker,
+    backend,
 } from "../assets";
 
 const skills = [
@@ -37,6 +38,11 @@ const skills = [
         icon: docker,
         title: "DevOps\nEngineer",
         floatDelay: 2,
+    },
+    {
+        icon: backend,
+        title: "AI Engineer\n(LLM Integration)",
+        floatDelay: 2.5,
     },
 ];
 

@@ -71,19 +71,48 @@ npm run preview
 
 ## Project Structure
 
-- `src/` – All the React components and logic
-- `src/components/` – Reusable components for different sections
-- `src/constants/` – Fixed data like skills and experience
-- `src/hoc/` – Higher-order components (wrapper stuff)
-- `public/` – Static assets like images and SVGs
-- `assets/` – Additional media files
+```
+├── index.html              # Entry HTML
+├── package.json            # Dependencies & scripts
+├── vite.config.js          # Vite configuration
+├── tailwind.config.js      # Tailwind theme & colors
+├── postcss.config.js       # PostCSS plugins
+├── public/                 # Static assets (3D models, images)
+│   ├── herobg.png
+│   ├── logo.svg
+│   ├── desktop_pc/         # 3D desktop model (GLTF)
+│   └── planet/             # 3D planet model (GLTF)
+└── src/
+    ├── main.jsx            # React entry point
+    ├── App.jsx             # Main app layout
+    ├── index.css           # Global styles & gradients
+    ├── styles.js           # Reusable Tailwind class strings
+    ├── assets/             # Images, icons, SVGs
+    │   ├── index.js        # Asset barrel exports
+    │   ├── tech/           # Technology icons (13 files)
+    │   └── company/        # Company logos (4 files)
+    ├── components/         # React components
+    │   ├── Hero.jsx
+    │   ├── About.jsx
+    │   ├── Works.jsx
+    │   ├── Experience.jsx
+    │   ├── Skills.jsx
+    │   ├── Features.jsx
+    │   ├── Contact.jsx
+    │   ├── Navbar.jsx
+    │   ├── Footer.jsx
+    │   └── canvas/         # Three.js canvas components
+    ├── constants/          # Static data (skills, projects, etc.)
+    ├── hoc/                # Higher-order components
+    └── utils/              # Animation utilities
+```
 
 ## Customization
 
 Want to use this as a template for your own portfolio? No problem:
 
 - Update the content in `src/constants/` with your own info
-- Replace the images in `public/` and `assets/`
+- Replace the images in `src/assets/`
 - Tweak the colors and styles in `tailwind.config.js`
 - Modify components to match your vibe
 

@@ -167,32 +167,53 @@ const experiences = [
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
+    {
+        title: "AI Engineer (LLM Integration)",
+        company_name: "InnovateTech AI",
+        icon: creator,
+        iconBg: "#915EFF",
+        date: "Feb 2024 - Present",
+        points: [
+            "Integrating Large Language Models and AI APIs into MERN stack applications.",
+            "Implementing RAG (Retrieval Augmented Generation) patterns with Vector databases for intelligent search.",
+            "Building AI-powered features including chatbots, recommendation engines, and content generation.",
+            "Optimizing LLM responses and managing token usage for cost-effective production deployments.",
+        ],
+    },
 ];
 
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Sahil proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+            "Sahil integrated LLMs into our MERN app seamlessly. His approach to AI-powered features in 2025 set us apart from competitors. Real game-changer for our user experience.",
+        name: "Vikram Reddy",
+        designation: "Tech Lead",
+        company: "Innovate Solutions",
+        image: "./assets/vikram-reddy.png",
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Sahil does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
+            "Building with Sahil on AI-driven analytics platform was incredible. His fullstack expertise combined with AI knowledge made everything scalable and production-ready from day one.",
+        name: "Priya Nair",
+        designation: "AI Product Manager",
+        company: "TechVision Labs",
+        image: "./assets/priya-nair.png",
     },
     {
         testimonial:
-            "After Sahil optimized our website, our traffic increased by 50%. We can't thank him enough!",
-        name: "Lisa Wang",
+            "Sahil's RAG and Vector Search implementation in our MERN stack brought intelligent search to life. His technical depth in modern AI + web development is exceptional.",
+        name: "Karthik Iyer",
         designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
+        company: "Digital Momentum",
+        image: "./assets/karthik-iyer.png",
+    },
+    {
+        testimonial:
+            "Outstanding work combining MERN stack with OpenAI APIs. Sahil built our chatbot feature with prompt engineering that rivals enterprise solutions. His LLM optimization reduced our token costs by 40%.",
+        name: "Anjali Krishnan",
+        designation: "Founder",
+        company: "AI Nexus",
+        image: "./assets/anjali-krishnan.png",
     },
 ];
 
