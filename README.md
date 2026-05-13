@@ -118,7 +118,6 @@ Want to use this as a template for your own portfolio? No problem:
 
 ## Contact & Links
 
-- **Portfolio:** [sahilaslam.me](https://sahilaslam.me)
 - **GitHub:** [@sahilaslam-art](https://github.com/sahilaslam-art)
 - **LinkedIn:** Reach out through the portfolio
 
