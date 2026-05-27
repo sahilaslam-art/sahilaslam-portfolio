@@ -80,15 +80,15 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* Stats Bar */}
+            {/* Highlights Bar */}
             <div className="max-w-7xl mx-auto w-full px-4 xs:px-6 sm:px-16 pb-6 sm:pb-10 mt-6 sm:mt-8 lg:mt-4">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
                     {[
-                        { number: "5+", label: "Years of Experience" },
-                        { number: "50+", label: "Satisfied Clients" },
-                        { number: "80+", label: "Completed Projects" },
-                        { number: "95%", label: "Client Retention Rate" },
-                    ].map((stat, i) => (
+                        { icon: "⚡", label: "Full-Stack Dev", sub: "React · Node · MongoDB" },
+                        { icon: "🎨", label: "3D & Motion", sub: "Three.js · Framer Motion" },
+                        { icon: "🧹", label: "Clean Code", sub: "Readable · Scalable · Fast" },
+                        { icon: "📚", label: "Always Learning", sub: "Growing every single day" },
+                    ].map((item, i) => (
                         <motion.div
                             key={i}
                             initial={{ opacity: 0, y: 20 }}
@@ -96,11 +96,12 @@ const Hero = () => {
                             transition={{ delay: 1 + i * 0.15, duration: 0.5 }}
                             className="bg-black-100 border border-white/10 rounded-xl sm:rounded-2xl px-4 sm:px-6 py-4 sm:py-5 hover:border-[#D4A053]/30 transition-all duration-300"
                         >
-                            <h3 className="text-white font-bold text-[22px] xs:text-[26px] sm:text-[32px]">
-                                {stat.number}
+                            <span className="text-[24px] sm:text-[28px]">{item.icon}</span>
+                            <h3 className="text-white font-semibold text-[13px] xs:text-[14px] sm:text-[16px] mt-2 leading-tight">
+                                {item.label}
                             </h3>
-                            <p className="text-secondary text-[11px] xs:text-[12px] sm:text-[14px] mt-1">
-                                {stat.label}
+                            <p className="text-secondary text-[10px] xs:text-[11px] sm:text-[12px] mt-1 leading-snug">
+                                {item.sub}
                             </p>
                         </motion.div>
                     ))}
