@@ -123,6 +123,19 @@ const Works = () => {
                                         <p className="mt-2 text-secondary text-[14px] lg:text-[15px] leading-[22px] line-clamp-2">
                                             {projects[0].description}
                                         </p>
+                                        {projects[0].demo_link && (
+                                            <div className="mt-3">
+                                                <a
+                                                    href={projects[0].demo_link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    onClick={(e) => e.stopPropagation()}
+                                                    className="text-[#D4A053] hover:text-white text-[13px] sm:text-[14px] font-medium transition-colors duration-300 inline-flex items-center gap-1.5"
+                                                >
+                                                    🔗 Live Demo
+                                                </a>
+                                            </div>
+                                        )}
                                     </div>
                                     <div
                                         onClick={(e) => {
@@ -181,9 +194,24 @@ const Works = () => {
                                 {/* Content */}
                                 <div className="p-5 flex-1 flex flex-col justify-between">
                                     <div className="flex justify-between items-start">
-                                        <h3 className="text-white font-bold text-[18px] leading-tight flex-1">
-                                            {project.name}
-                                        </h3>
+                                        <div className="flex-1">
+                                            <h3 className="text-white font-bold text-[18px] leading-tight">
+                                                {project.name}
+                                            </h3>
+                                            {project.demo_link && (
+                                                <div className="mt-2">
+                                                    <a
+                                                        href={project.demo_link}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        onClick={(e) => e.stopPropagation()}
+                                                        className="text-[#D4A053] hover:text-white text-[12px] font-medium transition-colors duration-300 inline-flex items-center gap-1.5"
+                                                    >
+                                                        🔗 Live Demo
+                                                    </a>
+                                                </div>
+                                            )}
+                                        </div>
                                         <div
                                             onClick={(e) => {
                                                 e.stopPropagation();
