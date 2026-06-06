@@ -30,6 +30,7 @@ const Works = () => {
                         })),
                         image: p.image || "",
                         source_code_link: p.githubUrl || "https://github.com/",
+                        demo_link: p.demoUrl || p.githubUrl || "https://github.com/",
                     }));
                     setProjects(mapped);
                 } else {
@@ -91,7 +92,10 @@ const Works = () => {
                         variants={fadeIn("right", "spring", 0, 0.75)}
                         className="lg:col-span-7 lg:row-span-2 group cursor-pointer"
                     >
-                        <div className="relative w-full h-full min-h-[400px] lg:min-h-[580px] bg-black-100 rounded-3xl overflow-hidden border border-white/5 hover:border-[#D4A053]/30 transition-all duration-500">
+                        <div 
+                            onClick={() => window.open(projects[0].demo_link || projects[0].source_code_link, "_blank")}
+                            className="relative w-full h-full min-h-[400px] lg:min-h-[580px] bg-black-100 rounded-3xl overflow-hidden border border-white/5 hover:border-[#D4A053]/30 transition-all duration-500"
+                        >
                             {/* Image */}
                             <div className="w-full h-[65%] overflow-hidden">
                                 {projects[0].image ? (
@@ -121,7 +125,10 @@ const Works = () => {
                                         </p>
                                     </div>
                                     <div
-                                        onClick={() => window.open(projects[0].source_code_link, "_blank")}
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            window.open(projects[0].source_code_link, "_blank");
+                                        }}
                                         className="ml-4 w-11 h-11 rounded-full bg-white/5 border border-white/10 flex justify-center items-center hover:bg-[#D4A053]/20 hover:border-[#D4A053]/30 transition-all duration-300 flex-shrink-0"
                                     >
                                         <img src={github} alt="github" className="w-5 h-5 object-contain" />
@@ -150,7 +157,10 @@ const Works = () => {
                             variants={fadeIn("left", "spring", (index + 1) * 0.3, 0.75)}
                             className="group cursor-pointer flex-1"
                         >
-                            <div className="relative w-full h-full min-h-[270px] bg-black-100 rounded-3xl overflow-hidden border border-white/5 hover:border-[#D4A053]/30 transition-all duration-500 flex flex-col">
+                            <div 
+                                onClick={() => window.open(project.demo_link || project.source_code_link, "_blank")}
+                                className="relative w-full h-full min-h-[270px] bg-black-100 rounded-3xl overflow-hidden border border-white/5 hover:border-[#D4A053]/30 transition-all duration-500 flex flex-col"
+                            >
                                 {/* Image */}
                                 <div className="w-full h-[55%] min-h-[150px] overflow-hidden">
                                     {project.image ? (
@@ -175,7 +185,10 @@ const Works = () => {
                                             {project.name}
                                         </h3>
                                         <div
-                                            onClick={() => window.open(project.source_code_link, "_blank")}
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                window.open(project.source_code_link, "_blank");
+                                            }}
                                             className="ml-3 w-9 h-9 rounded-full bg-white/5 border border-white/10 flex justify-center items-center hover:bg-[#D4A053]/20 hover:border-[#D4A053]/30 transition-all duration-300 flex-shrink-0"
                                         >
                                             <img src={github} alt="github" className="w-4 h-4 object-contain" />

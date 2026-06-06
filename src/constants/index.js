@@ -23,6 +23,7 @@ import {
     carrent,
     jobit,
     tripguide,
+    gsapPortfolio,
 } from "../assets";
 
 export const navLinks = [
@@ -219,25 +220,26 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "3D GSAP Storytelling Portfolio",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "An interactive 3D storytelling portfolio built using GSAP, Three.js, and React to create immersive visual experiences and smooth narrative scroll animations.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "threejs",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "gsap",
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: gsapPortfolio,
+        source_code_link: "https://github.com/sahilaslam-art/3d-gsap-porfolio",
+        demo_link: "https://3d-gsap-porfolio.vercel.app/",
     },
     {
         name: "Job IT",
@@ -259,6 +261,7 @@ const projects = [
         ],
         image: jobit,
         source_code_link: "https://github.com/",
+        demo_link: "https://github.com/",
     },
     {
         name: "Trip Guide",
@@ -280,6 +283,7 @@ const projects = [
         ],
         image: tripguide,
         source_code_link: "https://github.com/",
+        demo_link: "https://github.com/",
     },
 ];
 

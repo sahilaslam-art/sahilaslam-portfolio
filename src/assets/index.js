@@ -30,6 +30,7 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import herobg from "./herobg.png";
+import gsapPortfolio from "./Screenshot 2026-06-06 211502.png";
 
 export {
     logo,
@@ -61,4 +62,5 @@ export {
     jobit,
     tripguide,
     herobg,
+    gsapPortfolio,
 };
