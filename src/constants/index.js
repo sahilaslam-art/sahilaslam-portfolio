@@ -21,9 +21,9 @@ import {
     tesla,
     shopify,
     carrent,
-    jobit,
-    tripguide,
+    travelAgency,
     gsapPortfolio,
+    swcpCms,
 } from "../assets";
 
 export const navLinks = [
@@ -242,48 +242,48 @@ const projects = [
         demo_link: "https://3d-gsap-porfolio.vercel.app/",
     },
     {
-        name: "Job IT",
+        name: "SWCP Headless CMS",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "A visual editor for existing websites that allows users to change website content in real-time without touching the code.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "nodejs",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "mongodb",
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
-        demo_link: "https://github.com/",
+        image: swcpCms,
+        source_code_link: "https://github.com/sahilaslam-art/swcp-headless-cms",
+        demo_link: "https://swcp-headless-cms.vercel.app/login",
     },
     {
-        name: "Trip Guide",
+        name: "Tourest Travel Agency",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "A dedicated travel agency website where users can explore holiday destinations and book their trips.",
         tags: [
             {
-                name: "nextjs",
+                name: "html",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "css",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "javascript",
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
-        demo_link: "https://github.com/",
+        image: travelAgency,
+        source_code_link: "https://github.com/sahilaslam-art/travel-agency",
+        demo_link: "https://travel-agency-ten-phi.vercel.app/",
     },
 ];
 

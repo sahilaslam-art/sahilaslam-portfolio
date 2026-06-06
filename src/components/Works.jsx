@@ -32,7 +32,12 @@ const Works = () => {
                         source_code_link: p.githubUrl || "https://github.com/",
                         demo_link: p.demoUrl || p.githubUrl || "https://github.com/",
                     }));
-                    setProjects(mapped);
+                    if (mapped && mapped.length > 0) {
+                        setProjects(mapped);
+                    } else {
+                        console.log("No projects returned from API, using static fallback.");
+                        setProjects(staticProjects);
+                    }
                 } else {
                     setProjects(staticProjects);
                 }
@@ -198,6 +203,9 @@ const Works = () => {
                                             <h3 className="text-white font-bold text-[18px] leading-tight">
                                                 {project.name}
                                             </h3>
+                                            <p className="mt-1.5 text-secondary text-[13px] leading-[20px] line-clamp-2">
+                                                {project.description}
+                                            </p>
                                             {project.demo_link && (
                                                 <div className="mt-2">
                                                     <a
@@ -242,4 +250,4 @@ const Works = () => {
     );
 };
 
-export default SectionWrapper(Works, "about");
+export default SectionWrapper(Works, "projects");

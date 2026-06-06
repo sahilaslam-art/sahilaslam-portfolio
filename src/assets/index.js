@@ -28,9 +28,10 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import travelAgency from "./Screenshot 2026-06-06 224640.png";
 import herobg from "./herobg.png";
 import gsapPortfolio from "./Screenshot 2026-06-06 211502.png";
+import swcpCms from "./Screenshot 2026-06-06 222117.png";
 
 export {
     logo,
@@ -60,7 +61,8 @@ export {
     tesla,
     carrent,
     jobit,
-    tripguide,
+    travelAgency,
     herobg,
     gsapPortfolio,
+    swcpCms,
 };
