@@ -4,6 +4,7 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { projects as staticProjects } from "../constants";
 
 const API_BASE = "http://localhost:5000/api";
 
@@ -31,9 +32,12 @@ const Works = () => {
                         source_code_link: p.githubUrl || "https://github.com/",
                     }));
                     setProjects(mapped);
+                } else {
+                    setProjects(staticProjects);
                 }
             } catch (err) {
-                console.error("Failed to fetch projects:", err);
+                console.error("Failed to fetch projects, using static fallback:", err);
+                setProjects(staticProjects);
             } finally {
                 setLoading(false);
             }
